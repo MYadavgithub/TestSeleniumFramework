@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteWithListener">
+    <listeners>
+        <listener class-name="com.webAutomation.utils.SuiteListner"/>
+    </listeners>
+    <test name="SampleTest">
+    <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="com.webAutomation.tests.AmazonTest"/>
+        </classes>
+    </test>
+</suite>
